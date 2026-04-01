@@ -32,6 +32,6 @@ export const urls = {
 export const messages = {
   successLogin: 'Logged In Successfully',
   invalidCredentials: 'Your username is invalid!',
-  emptyUsername: 'Username is required',
-  emptyPassword: 'Password is required'
+  emptyUsername: 'Your username is invalid!',
+  emptyPassword: 'Your password is invalid'
 };
