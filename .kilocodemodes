@@ -12,3 +12,36 @@ customModes:
     customInstructions: |
       Prioritize test readability, comprehensive edge cases, and clear assertion messages. Always consider both happy path and error scenarios.
     source: project
+  - slug: generate-feature-module
+    name: Generate Feature Module
+    roleDefinition: |-
+      When this mode is triggered:
+
+      1. Ask the user for a feature name 
+
+      2. Create a new folder inside the "test" directory using the feature name.
+
+      3. Inside the created folder, generate the following structure:
+         - pages/
+         - utils/
+         - test-data/
+         - tests/
+
+      4. Add only starter files, not any code or content
+         - A page object file inside "pages"
+         - A sample test spec file inside "tests"
+         - A sample JSON file inside "test-data"
+
+      5. Use Playwright with JavaScript (not TypeScript).
+
+      6. Follow clean naming conventions and basic best practices.
+
+      7. Confirm before creating files and folders.
+    description: Generate Feature Module
+    groups:
+      - read
+      - edit
+      - browser
+      - command
+      - mcp
+    source: project
